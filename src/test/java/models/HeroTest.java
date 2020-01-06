@@ -26,17 +26,17 @@ public class HeroTest {
     @Test
     public void hero_heroInstantiatesWithName_true() throws Exception{
         Hero hero = setUpNewHero();
-        assertEquals("thor",hero.getName());
+        assertEquals("name",hero.getName());
     }
 
     @Test
     public void Squad_InstantiatewithId_1() throws Exception{
         Hero hero = setUpNewHero();
-        assertEquals(1,hero.getId());
+        assertEquals(4,hero.getId());
     }
 
 
     public Hero setUpNewHero(){
-        return new Hero("thor",1);
+        return new Hero("name",4,"power","weakness",6);
     }
 }

@@ -2,6 +2,8 @@ package models;
 
 
 import java.util.Objects;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Squad {
 
@@ -9,12 +11,15 @@ public class Squad {
     private String name;
     private String cause;
     private int id;
-    private boolean isAdded;
 
-    public Squad(String name,int id){
+    private static ArrayList<Squad> allSquads = new ArrayList<>();
+    private List<Hero> heroesInSquad;
+
+    public Squad(String name){
         this.name = name;
-        this.id = id;
-        this.isAdded = false;
+        allSquads.add(this);
+        this.id = allSquads.size();
+        this.heroesInSquad = new ArrayList<Hero>();
 
     }
 
@@ -42,5 +47,6 @@ public class Squad {
         this.id = id;
 
     }
+
 
 }
