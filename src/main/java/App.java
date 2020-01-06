@@ -23,6 +23,17 @@ public class App {
             return new ModelAndView(model,"index.hbs");
             }, new HandlebarsTemplateEngine());
 
+        post("/postNewSquad",(request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            int maxSize = Integer.parseInt(request.queryParams("maxsize"));
+            String name = request.queryParams("name");
+            String cause = request.queryParams("cause");
+            model.put("maxsize",maxSize);
+            model.put("name",name);
+            model.put("cause",cause);
+            return new ModelAndView(model,"success.hbs");
+        }, new HandlebarsTemplateEngine());
+
     }
 
 }
