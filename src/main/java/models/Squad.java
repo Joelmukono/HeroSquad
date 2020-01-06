@@ -1,7 +1,6 @@
 package models;
 
 
-import java.util.Objects;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,6 +45,22 @@ public class Squad {
     public void setId(int id){
         this.id = id;
 
+    }
+
+    public static Squad findSquad(int id){
+        return allSquads.get(id-1);
+    }
+
+    public void addBookToAuthor(Hero newHero){
+        heroesInSquad.add(newHero);
+    }
+
+    public List<Hero> getAllThisAuthorBooks(){
+        return heroesInSquad;
+    }
+
+    public static ArrayList<Squad> getAllAuthors() {
+        return allSquads;
     }
 
 
