@@ -49,7 +49,7 @@ public class App {
             int age = Integer.parseInt(request.queryParams("age"));
             String power = request.queryParams("power");
             String weakness = request.queryParams("weakness");
-            String Id = request.queryParams("squadteam");
+            String Id = request.queryParams("squadTeam");
             Squad newSquadTeam = Squad.findSquad(Integer.parseInt(Id));
             Hero newHero = new Hero(name,power,weakness,age);
             newSquadTeam.addHeroToSquad(newHero);
