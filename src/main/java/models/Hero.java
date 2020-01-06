@@ -42,7 +42,7 @@ public class Hero {
             this.id = id;
         }
 
-        public static ArrayList<Hero> getAllBooks() {
+        public static ArrayList<Hero> getAllHeroes() {
         return allHeroes;
     }
 

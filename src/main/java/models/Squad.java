@@ -59,7 +59,7 @@ public class Squad {
         return heroesInSquad;
     }
 
-    public static ArrayList<Squad> getAllAuthors() {
+    public static ArrayList<Squad> getAllSquads() {
         return allSquads;
     }
 
