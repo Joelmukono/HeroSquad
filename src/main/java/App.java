@@ -31,7 +31,7 @@ public class App {
             model.put("maxsize",maxSize);
             model.put("name",name);
             model.put("cause",cause);
-            return new ModelAndView(model,"success.hbs");
+            return new ModelAndView(model,"success_squad.hbs");
         }, new HandlebarsTemplateEngine());
 
         get("/showSquadHeroes/:id",(request, response) -> {
@@ -53,7 +53,7 @@ public class App {
             Squad newSquadTeam = Squad.findSquad(Integer.parseInt(Id));
             Hero newHero = new Hero(name,power,weakness,age);
             newSquadTeam.addHeroToSquad(newHero);
-            return new ModelAndView(model,"success.hbs");
+            return new ModelAndView(model,"success_heroes.hbs");
 
         },new HandlebarsTemplateEngine());
 

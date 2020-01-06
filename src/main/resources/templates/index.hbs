@@ -1,0 +1,18 @@
+{{#partial "title"}}Home{{/partial}}
+
+{{#partial "content"}}
+    <lable>Add new Squad</lable>
+    <form action="/postNewSquad" method="post">
+        <label>Max Size</label>
+        <input type="number" name="maxsize">
+        <label>Cause</label>
+        <input type="text" name="cause">
+        <label>Name</label>
+        <input type="text" name="name">
+        <button type="submit">Add squad</button>
+
+    </form>
+
+{{/partial}}
+
+{{> layout.hbs}}
