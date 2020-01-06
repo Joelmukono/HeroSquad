@@ -3,19 +3,35 @@
 {{#partial "content"}}
     <div class="row">
         <div class="col-sm-4">
-        <lable>Add new Squad</lable>
-        <form action="/postNewSquad" method="post" class="form-horizontal">
-            <div class="form-group">
-            <label>Max Size</label>
-                <input type="number" name="maxsize">
-            <label>Cause</label>
-                <input type="text" name="cause">
-            <label>Name</label>
-                <input type="text" name="name">
-            <button type="submit">Add squad</button>
-            </div>
+            <h2>Add Squad</h2>
+            <form action="/postNewSquad" method="post">
+                <div class="form-group">
+                    <label for="max">MaxSize:</label>
+                    <input type="number" class="form-control" placeholder="Enter maxsize" id="maxsize" name = "maxsize">
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" placeholder="Enter name" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Cause:</label>
+                    <input type="text" class="form-control" placeholder="Enter cause" id="cause" name="cause">
+                </div>
 
-        </form>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <h2>List of Squads</h2>
+
+
+            {{#each allSquads}}
+                <label>Size</label>
+            <h2><span class="badge badge-secondary">{{maxsize}}</span></h2>
+            <label>Name</label>
+            <h2><span class="badge badge-secondary">{{name}}</span></h2>
+            <label>Cause</label>
+            <h2><span class="badge badge-secondary">{{cause}}</span></h2>
+            {{/each}}
+        </div>
     </div>
 
 {{/partial}}

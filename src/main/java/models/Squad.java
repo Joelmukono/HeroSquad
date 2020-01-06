@@ -14,15 +14,15 @@ public class Squad {
     private static ArrayList<Squad> allSquads = new ArrayList<>();
     private List<Hero> heroesInSquad;
 
-    public Squad(String name){
+    public Squad(String name,int maxsize,String cause){
         this.name = name;
+        this.maxsize = maxsize;
+        this.cause = cause;
         allSquads.add(this);
         this.id = allSquads.size();
         this.heroesInSquad = new ArrayList<Hero>();
 
     }
-
-
 
 
 

@@ -17,9 +17,9 @@ public class App {
         get("/",(request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             ArrayList<Squad> allSquads = Squad.getAllSquads();
-            ArrayList<Hero> allHeros = Hero.getAllHeroes();
+            ArrayList<Hero> allHeroes = Hero.getAllHeroes();
             model.put("allSquads",allSquads);
-            model.put("allHeroes",allHeros);
+            model.put("allHeroes",allHeroes);
             return new ModelAndView(model,"index.hbs");
             }, new HandlebarsTemplateEngine());
 
@@ -28,6 +28,7 @@ public class App {
             int maxSize = Integer.parseInt(request.queryParams("maxsize"));
             String name = request.queryParams("name");
             String cause = request.queryParams("cause");
+            Squad newSquad = new Squad(name,maxSize,cause);
             model.put("maxsize",maxSize);
             model.put("name",name);
             model.put("cause",cause);
