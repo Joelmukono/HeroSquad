@@ -36,6 +36,6 @@ public class SquadTest {
 
 
     public Squad setUpNewSquad(){
-        return new Squad("avengers",1);
+        return new Squad("avengers");
     }
 }

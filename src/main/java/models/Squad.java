@@ -51,11 +51,11 @@ public class Squad {
         return allSquads.get(id-1);
     }
 
-    public void addBookToAuthor(Hero newHero){
+    public void addHeroToSquad(Hero newHero){
         heroesInSquad.add(newHero);
     }
 
-    public List<Hero> getAllThisAuthorBooks(){
+    public List<Hero> getAllHeroes(){
         return heroesInSquad;
     }
 

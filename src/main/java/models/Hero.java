@@ -9,7 +9,7 @@ public class Hero {
         private int id;
         private static ArrayList<Hero> allHeroes = new ArrayList<>();
 
-        public Hero(String name,int id,String power,String weakness,int age){
+        public Hero(String name,String power,String weakness,int age){
             this.name = name;
             this.id = id;
             this.age = age;
