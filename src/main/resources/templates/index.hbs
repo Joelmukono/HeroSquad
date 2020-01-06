@@ -1,17 +1,22 @@
 {{#partial "title"}}Home{{/partial}}
 
 {{#partial "content"}}
-    <lable>Add new Squad</lable>
-    <form action="/postNewSquad" method="post">
-        <label>Max Size</label>
-        <input type="number" name="maxsize">
-        <label>Cause</label>
-        <input type="text" name="cause">
-        <label>Name</label>
-        <input type="text" name="name">
-        <button type="submit">Add squad</button>
+    <div class="row">
+        <div class="col-sm-4">
+        <lable>Add new Squad</lable>
+        <form action="/postNewSquad" method="post" class="form-horizontal">
+            <div class="form-group">
+            <label>Max Size</label>
+                <input type="number" name="maxsize">
+            <label>Cause</label>
+                <input type="text" name="cause">
+            <label>Name</label>
+                <input type="text" name="name">
+            <button type="submit">Add squad</button>
+            </div>
 
-    </form>
+        </form>
+    </div>
 
 {{/partial}}
 
