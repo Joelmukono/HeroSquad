@@ -54,7 +54,7 @@ public class App {
             Squad newSquadTeam = Squad.findSquad(Integer.parseInt(Id));
             Hero newHero = new Hero(name,power,weakness,age);
             newSquadTeam.addHeroToSquad(newHero);
-            return new ModelAndView(model,"success_heroes.hbs");
+            return new ModelAndView(model,"added_heroes.hbs");
 
         },new HandlebarsTemplateEngine());
 
