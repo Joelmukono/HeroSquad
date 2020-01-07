@@ -32,7 +32,7 @@ public class HeroTest {
     @Test
     public void Squad_InstantiatewithId_1() throws Exception{
         Hero hero = setUpNewHero();
-        assertEquals(4,hero.getId());
+        assertEquals(0,hero.getId());
     }
 
 
