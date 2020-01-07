@@ -1,12 +1,14 @@
 {{#partial "content"}}
 
-    <h1>{{oneSquad.name}}</h1>
+    <h1>List of heroes for {{oneSquad.name}} squad</h1>
 
     <ol>
         {{#each oneHero}}
             <li>
-                <h4>{{name}} <small>{{age}} Pages | <span class="text-success">{{power}}</span></small></h4>
-                <p>{{weakness}}</p>
+                <h3 id="namehero">{{name}}</h3>
+                <h3 id ="agehero">{{age}}</h3>
+                <h3 id="powerhero">{{power}}</h3>
+                <h3 id="weaknesshero">{{weakness}}</h3>
             </li>
         {{/each}}
     </ol>

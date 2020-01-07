@@ -1,7 +1,8 @@
 {{#partial "title"}}Home{{/partial}}
 
 {{#partial "content"}}
-    <div class="row">
+    <center><h1>HeroSquad</h1></center>
+    <div class="row" id="row_class">
         <div class="col-sm-4">
             <h2>Add Squad</h2>
             <form action="/postNewSquad" method="post">
@@ -40,12 +41,12 @@
                     <h2>Add Hero</h2>
                     <form action="/postNewHero" method="post">
                         <div class="form-group">
-                            <label for="max">Name:</label>
-                            <input type="number" class="form-control" placeholder="Enter name" id="maxsize" name = "name">
+                            <label for="max">Age:</label>
+                            <input type="number" class="form-control" placeholder="Enter name" id="maxsize" name ="age">
                         </div>
                         <div class="form-group">
-                            <label for="name">Age:</label>
-                            <input type="text" class="form-control" placeholder="Enter name" id="name" name="age">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" placeholder="Enter name" id="name" name="name">
                         </div>
                         <div class="form-group">
                             <label for="name">Power:</label>
@@ -56,29 +57,31 @@
                             <input type="text" class="form-control" placeholder="Enter cause" id="cause" name="weakness">
                         </div>
 
+                        <label class="control-label">Select Squad</label>
+
+                        <select class="form-control input-sm mb15" name="squadTeam">
+                            <option value="">-</option>
+                            {{#each allSquads}}
+                                <option value="{{id}}">{{name}}</option>
+                            {{/each}}
+                        </select>
+
                         <button type="submit" class="btn btn-primary">Submit</button>
 
-                <label class="control-label">Select Squad</label>
 
-                    <select class="form-control input-sm mb15" name="bookAuthor">
-                        <option value="">-</option>
-                        {{#each allSquads}}
-                            <option value="{{id}}">{{name}}</option>
-                        {{/each}}
-                    </select>
 
                     </form>
 
                     <h3>List of Authors</h3>
                     {{#if allSquads}}
-                        <p>Here's a list of all the author's in our records:</p>
+                        <p>Here's a list of all the squads </p>
                         <ol>
                             {{#each allSquads}}
                                 <li>{{name}} | <a href="/showSquadForHeroes/{{id}}">View Heroes</a> </li>
                             {{/each}}
                         </ol>
                     {{else}}
-                        <p class="text-danger">Don't have any Squad in our records yet!</p>
+                        <p class="text-danger">Don't have any Squad for your heroes</p>
                     {{/if}}
             </div>
 
