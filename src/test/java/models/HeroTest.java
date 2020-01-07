@@ -37,6 +37,6 @@ public class HeroTest {
 
 
     public Hero setUpNewHero(){
-        return new Hero("name",4,"power","weakness",6);
+        return new Hero( "name","power","weakness",5);
     }
 }
