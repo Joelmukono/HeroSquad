@@ -9,17 +9,8 @@
 
     <h3 class="char">Hero characteristics</h3>
 
-    <ol>
-        {{#each oneHero}}
-            <li>
-                <h3 id="namehero">{{name}}</h3>
-                <h3 id ="agehero">{{age}}</h3>
-                <h3 id="powerhero">{{power}}</h3>
-                <h3 id="weaknesshero">{{weakness}}</h3>
-            </li>
-        {{/each}}
-    </ol>
 
+    {{#each oneHero}}
     <div class="card" style="width:400px">
 
         <div class="card-body">
@@ -29,6 +20,7 @@
             <h3 id="weaknesshero">{{weakness}}</h3>
         </div>
     </div>
+    {{/each}}
 {{/partial}}
 
 {{> layout.hbs}}
