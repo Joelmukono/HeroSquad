@@ -15,12 +15,12 @@ which to place a hero.
  2.Output display squad info
  
  - Form for Add hero
- 1.input hero info
- 2.output display herp info
+ 1. input hero info
+ 2. output display herp info
  
  - Object within object.
- 1.select squad.
- 2.view heros for selected squad.
+ 1. select squad.
+ 2. view heros for selected squad.
  
  ## Set-up instructions
 - Go to https://github.com/Joelmukono/HeroSquad
