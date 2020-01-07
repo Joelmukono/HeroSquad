@@ -72,20 +72,25 @@
 
                     </form>
 
-                    <h3>List of Squads</h3>
-                    {{#if allSquads}}
-                        <p>Here's a list of all the squads </p>
-                        <ol>
-                            {{#each allSquads}}
-                                <li>{{name}} | <a href="/showSquadForHeroes/{{id}}">View Heroes</a> </li>
-                            {{/each}}
-                        </ol>
-                    {{else}}
-                        <p class="text-danger">Don't have any Squad for your heroes</p>
-                    {{/if}}
+
 
 
     </div>
+        <div class="info">
+            <h3>List of Squads</h3>
+            {{#if allSquads}}
+                <p>Here's a list of all the squads </p>
+                <ol>
+                    {{#each allSquads}}
+                        <li>{{name}} | <a href="/showSquadForHeroes/{{id}}">View Heroes</a> </li>
+                    {{/each}}
+                </ol>
+            {{else}}
+                <p class="text-danger">Don't have any Squad for your heroes</p>
+            {{/if}}
+
+        </div>
+
     </div>
 
 {{/partial}}
