@@ -8,15 +8,15 @@
             <form action="/postNewSquad" method="post">
                 <div class="form-group">
                     <label for="max">MaxSize:</label>
-                    <input type="number" class="form-control" placeholder="Enter maxsize" id="maxsize" name = "maxsize">
+                    <input type="number" class="form-control" placeholder="Enter maxsize" id="maxsize" name = "maxsize" required>
                 </div>
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" class="form-control" placeholder="Enter name" id="name" name="name">
+                    <input type="text" class="form-control" placeholder="Enter name" id="name" name="name" required>
                 </div>
                 <div class="form-group">
                     <label for="name">Cause:</label>
-                    <input type="text" class="form-control" placeholder="Enter cause" id="cause" name="cause">
+                    <input type="text" class="form-control" placeholder="Enter cause" id="cause" name="cause"required >
                 </div>
 
                 <button type="submit" class="btn btn-primary">Submit</button>
@@ -42,11 +42,11 @@
                     <form action="/postNewHero" method="post">
                         <div class="form-group">
                             <label for="max">Age:</label>
-                            <input type="number" class="form-control" placeholder="Enter name" id="maxsize" name ="age">
+                            <input type="number" class="form-control" placeholder="Enter name" id="maxsize" name ="age" required>
                         </div>
                         <div class="form-group">
                             <label for="name">Name:</label>
-                            <input type="text" class="form-control" placeholder="Enter name" id="name" name="name">
+                            <input type="text" class="form-control" placeholder="Enter name" id="name" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="name">Power:</label>
@@ -54,7 +54,7 @@
                         </div>
                         <div class="form-group">
                             <label for="name">Weakness:</label>
-                            <input type="text" class="form-control" placeholder="Enter cause" id="cause" name="weakness">
+                            <input type="text" class="form-control" placeholder="Enter cause" id="cause" name="weakness" required>
                         </div>
 
                         <label class="control-label">Select Squad</label>
