@@ -31,7 +31,7 @@ public class SquadTest {
     @Test
     public void Squad_InstantiatewithId_1() throws Exception{
         Squad squad = setUpNewSquad();
-        assertEquals(1,squad.getId());
+        assertEquals(3,squad.getId());
     }
 
 
