@@ -29,7 +29,7 @@
 - commit changes made.
 - push to branch
 - create pull request
- -gradlerun
+- gradlerun
  
  # Contact information.
 ### Email:  jlmukono@gmail.com
