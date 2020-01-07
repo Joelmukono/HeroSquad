@@ -14,11 +14,11 @@ which to place a hero.
  1. Input Squad info
  2.Output display squad info
  
- -Form for Add hero
+ - Form for Add hero
  1.input hero info
- 2output display herp info
+ 2.output display herp info
  
- -Object within object.
+ - Object within object.
  1.select squad.
  2.view heros for selected squad.
  
