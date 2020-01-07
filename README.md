@@ -11,7 +11,7 @@
 ## BDD
  - Form for Add squad
  1. Input Squad info
- 2.Output display squad info
+ 2. Output display squad info
  
  - Form for Add hero
  1. input hero info
