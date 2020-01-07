@@ -1,0 +1,15 @@
+{{#partial "content"}}
+
+    <h1>{{oneSquad.name}}</h1>
+
+    <ol>
+        {{#each oneHero}}
+            <li>
+                <h4>{{name}} <small>{{age}} Pages | <span class="text-success">{{power}}</span></small></h4>
+                <p>{{weakness}}</p>
+            </li>
+        {{/each}}
+    </ol>
+{{/partial}}
+
+{{> layout.hbs}}

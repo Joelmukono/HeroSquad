@@ -31,7 +31,57 @@
             <label>Cause</label>
             <h2><span class="badge badge-secondary">{{cause}}</span></h2>
             {{/each}}
+
         </div>
+
+
+            <div class="form-group">
+                <div class="col-md-6">
+                    <h2>Add Hero</h2>
+                    <form action="/postNewHero" method="post">
+                        <div class="form-group">
+                            <label for="max">Name:</label>
+                            <input type="number" class="form-control" placeholder="Enter name" id="maxsize" name = "name">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Age:</label>
+                            <input type="text" class="form-control" placeholder="Enter name" id="name" name="age">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Power:</label>
+                            <input type="text" class="form-control" placeholder="Enter cause" id="cause" name="power">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Weakness:</label>
+                            <input type="text" class="form-control" placeholder="Enter cause" id="cause" name="weakness">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                <label class="control-label">Select Squad</label>
+
+                    <select class="form-control input-sm mb15" name="bookAuthor">
+                        <option value="">-</option>
+                        {{#each allSquads}}
+                            <option value="{{id}}">{{name}}</option>
+                        {{/each}}
+                    </select>
+
+                    </form>
+
+                    <h3>List of Authors</h3>
+                    {{#if allSquads}}
+                        <p>Here's a list of all the author's in our records:</p>
+                        <ol>
+                            {{#each allSquads}}
+                                <li>{{name}} | <a href="/showSquadForHeroes/{{id}}">View Heroes</a> </li>
+                            {{/each}}
+                        </ol>
+                    {{else}}
+                        <p class="text-danger">Don't have any Squad in our records yet!</p>
+                    {{/if}}
+            </div>
+
     </div>
 
 {{/partial}}

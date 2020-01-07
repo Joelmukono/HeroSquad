@@ -35,12 +35,12 @@ public class App {
             return new ModelAndView(model,"success_squad.hbs");
         }, new HandlebarsTemplateEngine());
 
-        get("/showSquadHeroes/:id",(request, response) -> {
+        get("/showSquadForHeroes/:id",(request, response) -> {
             Map<String,Object> model = new HashMap<>();
             Squad oneSquad = Squad.findSquad(Integer.parseInt(request.params(":id")));
             List<Hero> squadHeroes = oneSquad.getAllHeroes();
             model.put("oneSquad",oneSquad);
-            model.put("authorBooks",squadHeroes);
+            model.put("oneHero",squadHeroes);
             return new ModelAndView(model,"heroes.hbs");
         },new HandlebarsTemplateEngine());
 
