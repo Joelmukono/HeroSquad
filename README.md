@@ -1,6 +1,5 @@
 # HeroSquad
-### HeroSquad is a web application that allows users to add squads of heroes.The user first adds squads then selects a squad in
-which to place a hero.
+### HeroSquad is a web application that allows users to add squads of heroes.The user first adds squads then selects a squad in which to place a hero.
 
 # Author:Joel Mukono.
 
