@@ -4,7 +4,7 @@
     <center><h1 class="herotitle">HeroSquad</h1></center>
     <div class="row" id="row_class">
         <div class="col-sm-4">
-            <h2>Add Squad</h2>
+            <h2><span class="label label-info">Add Squad</span></h2>
             <form action="/postNewSquad" method="post">
                 <div class="form-group">
                     <label for="max">MaxSize:</label>
@@ -38,7 +38,7 @@
 
             <div class="form-group heroes">
 
-                    <h2>Add Hero</h2>
+                <h2><span class="label label-info">Add hero</span></h2>
                     <form action="/postNewHero" method="post">
                         <div class="form-group">
                             <label for="max">Age:</label>
@@ -77,7 +77,7 @@
 
     </div>
         <div class="info">
-            <h3>List of Squads with Heroes</h3>
+            <h2><span class="label label-info">Squad hero list</span></h2>
             {{#if allSquads}}
                 <p>Here's a list of all the squads </p>
                 <ol>
